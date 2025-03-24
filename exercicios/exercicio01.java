@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class exercicio{
+class exercicio01{
     public static void main(String[] args){
         Scanner scanner1 = new Scanner(System.in);
         System.out.println("Qual o seu nome:");
@@ -41,23 +41,54 @@ class exercicio{
         scanner1.close();
 
         double salBruto = (horasTrab*salarioPorHora)*4;
-        double INPS = (SalBruto/100)*8.5;
+        double INPS = (salBruto/100)*8.5;
         double salFamiliaTotal = salFamilia*numeroDeFilhos;
 
         if (salBruto > 1500) {
             double ir = (salBruto/100)*15;
-            double desconto = salBruto - ir;
             
             if (idade > 40) {
-                double Adicional = (salBruto/100)*2;
+                double adicional = (salBruto/100)*2;
             }
             if (tempoDeServico > 15) {
-                double Adicional = (salBruto/100)*3.5;
+                double adicional = (salBruto/100)*3.5;
             }
             if (15 >= tempoDeServico && tempoDeServico > 5 && idade > 30) {
-                double Adicional = (salBruto/100)*1.5;                
+                double adicional = (salBruto/100)*1.5;                
             }
         }
 
+        if (500 < salBruto && salBruto < 1500) {
+            double ir = (salBruto/100)*8;
+
+            if (idade > 40) {
+                double adicional = (salBruto/100)*2;
+            }
+            if (tempoDeServico > 15) {
+                double adicional = (salBruto/100)*3.5;
+            }
+            if (15 >= tempoDeServico && tempoDeServico > 5 && idade > 30) {
+                double adicional = (salBruto/100)*1.5;                
+            }
+        }
+        if (500 > salBruto) {
+            ir = 0
+
+            if (idade > 40) {
+                double adicional = (salBruto/100)*2;
+            }
+            if (tempoDeServico > 15) {
+                double adicional = (salBruto/100)*3.5;
+            }
+            if (15 >= tempoDeServico && tempoDeServico > 5 && idade > 30) {
+                double adicional = (salBruto/100)*1.5;                
+            }
+        }
+        double desconto = salBruto - ir;
+        double adicionalTotal = salFamiliaTotal + adicional;
+        double salLiquido = desconto + adicionalTotal;
+        
+
+        System.out.println("Olá " + name + ", o seu salario bruto é de: R$" + salBruto + "\nO total de descontos foi: R$ " + ir + "\nO total de adicional foi: R$ " + adicionalTotal + "\nO salario liquido é de: R$" + salLiquido);
     }
 }
