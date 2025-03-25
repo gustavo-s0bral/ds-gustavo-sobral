@@ -39,20 +39,20 @@ public class exercicio03 {//Linha declara o arquivo (mesmo nome do arquivo)
         System.out.println("Nao e um triangulo.");
       }
       else{
-        if (a*a = b*b + c*c) {
-          System.out.println("Ele e um triangulo retangulo.");
+        if (a*a == b*b + c*c) {
+          System.out.println("\nEle e um triangulo retangulo.");
         }
         if (a*a > b*b + c*c) {
-          System.out.println("Ele e um triangulo obtusangulo.");
+          System.out.println("\nEle e um triangulo obtusangulo.");
         }
         if (a*a < b*b + c*c) {
-          System.out.println("Ele e um triangulo acutangulo");
+          System.out.println("\nEle e um triangulo acutangulo");
         }
         if (a == b && b == c) {
-          System.out.println("Ele e um triangulo equilatero.");
+          System.out.println("\nEle e um triangulo equilatero.");
         }
         if (a == b || b == c || a == c) {
-          System.out.println("Ele e um triangulo isoceles.");
+          System.out.println("\nEle e um triangulo isoceles.");
         }
       }
     }
