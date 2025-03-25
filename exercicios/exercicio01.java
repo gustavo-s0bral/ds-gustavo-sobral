@@ -72,7 +72,7 @@ class exercicio01{
             }
         }
         if (500 > salBruto) {
-            ir = 0
+            ir = 0;
 
             if (idade > 40) {
                 double adicional = (salBruto/100)*2;

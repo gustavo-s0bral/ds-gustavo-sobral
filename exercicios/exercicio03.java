@@ -39,7 +39,7 @@ public class exercicio03 {//Linha declara o arquivo (mesmo nome do arquivo)
         System.out.println("Nao e um triangulo.");
       }
       else{
-        if (a*a = b*b + c*c) {
+        if (a*a == b*b + c*c) {
           System.out.println("Ele e um triangulo retangulo.");
         }
         if (a*a > b*b + c*c) {
