@@ -16,7 +16,7 @@ public class exercicio02 {
 
         Scanner scanner4 = new Scanner(System.in);
         System.out.println("Digite o seu salario: ");
-        int salario = scanner3.nextInt();
+        Double salario = scanner3.nexDouble();
 
         scanner4.close();
         scanner3.close();
